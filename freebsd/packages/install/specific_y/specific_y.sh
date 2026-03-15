@@ -3,3 +3,4 @@
 #vars
 packagename="doas"
 pkg install -y "$packagename"
+
