@@ -57,7 +57,7 @@ exit9001MSG="SSID already found in $wpa_conf"
 # .functions-start
 #exit code log.
 log_exit() {
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - EXIT $1: $2" >> /var/log/wlan_setup.log
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - EXIT $1: $2" >> /var/log/connect_wifi_static.log
     exit $1
 }
 # .functions-end
