@@ -33,8 +33,8 @@ existinggateway=$(grep "defaultrouter=\"$gateway\"" "$rc_conf")
 #ipv6 enable detection.
 existingipv6=$(grep "ifconfig_${ethint}_ipv6=" "$rc_conf")
 #existing name server(s).
-existingnameserver1=10.100.10.102
-existingnameserver2=10.100.10.104
+existingnameserver1=xx.xxx.xx.xxx
+existingnameserver2=xx.xxx.xx.xxx
 #existing name server(s) detection.
 existingnameserver1check=$(grep "nameserver $existingnameserver1" "$resolv_conf")
 existingnameserver2check=$(grep "nameserver $existingnameserver2" "$resolv_conf")
