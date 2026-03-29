@@ -4,6 +4,8 @@
 #don't worry about this section in rc.conf as it gets set when installing FreeBSD (create_args_wlan0="country US regdomain FCC")
 #gateway must provide nameserver(s).
 #this script will not reboot the device but if sshed in will disconnect and maybe reconnect depending if the IP change.
+#if dhcp is used on the lan or wlan adpater this script wont have issues. if static lan or wlan is already set use a failover/lag.
+#ideally save this script locally to the device and run it if sshed in. cd to dir, ee connect_eth_static.sh  chmod +x connect_eth_static.sh  sudo sh connect_eth_static.sh 
 #to get your virtual wlan interface run, ifconfig -a .
 # .notes-end
 # .vars-start
